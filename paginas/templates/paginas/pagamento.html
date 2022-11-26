@@ -1,0 +1,41 @@
+{% extends 'paginas/modelo.html' %}
+{% load static %}
+
+{% block destaque %}
+
+{% endblock %}
+
+{% block conteudo %}
+<h3 class="lead" style="text-align: center;">Pagamento </h3>
+<p class="lead" style="text-align: center;"> Escolha a Forma de Pagamento </p>
+
+<h3 style="text-align: center;"> <img style="text-align:center ;" class="center" src="{% static 'img/pacote.PNG' %}"
+        width="15%" height="150" alt=""></h3>
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <h6 class="lead" style="text-align: center ;"> <a style="color: blue;" class="nav-link"
+                        href="{% url 'cadastrar-cartao' %}">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        Cartao de Credito
+                    </a>
+                </h6>
+            <tr>
+                <h6 class="lead" style="text-align: center ;">
+                    <a style="color: red;" class="nav-link" href="{% url 'pix1' %}">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        Pix
+                    </a>
+                </h6>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+{% endblock %}
+
+{% block roda %}
+
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends 'paginas/modelo.html' %}
+
+{% load static %}
+
+{% block destaque %}
+
+{% endblock %}
+
+{% block conteudo %}
+<h5  class="lead" style="text-align: center; color:whitesmoke"> Assim que  for pago o Curso Pacote Full Stack será enviado
+        para seu email automaticamente </h5>
+<br>
+<p class="lead" style="text-align: center; color:yellow"> Preencha todos os campos corretamente</p>
+
+<h2 style="text-align: center;">Prencha seu email pra pagar com o Pix</h2>
+
+
+
+
+<h3 style="text-align: center;"> <img style="text-align:center ;" class="center" src="{% static 'img/pacote.PNG' %}"
+                width="15%" height="150" alt=""></h3>
+                
+                <h6 style="text-align: center; color: red;"> $ 297,00</h6>
+                <h6 style="text-align: center; color: greenyellow;"> $50</h6>
+             
+
+<form action="" method="POST" style="text-align: center;">
+
+        {% csrf_token %}
+
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-success">Pagar</button>
+
+</form>
+
+{% endblock %}
+
+{% block roda %}
+
+{% endblock %}

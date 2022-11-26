@@ -1,0 +1,39 @@
+{% extends 'paginas/modelo.html' %}
+
+{% load static %}
+
+{% block destaque %}
+
+{% endblock %}
+
+{% block conteudo %}
+
+
+    <h5 class="lead" style="text-align: center; color:whitesmoke"> <img style="text-align:center ;" class="center" src="{% static 'img/pacote.PNG' %}" width="5%" height="50" alt=""> Assim for pago o Curso Pacote Full Stack será enviado para seu email automaticamente </h5>
+    <br>
+    <p class="lead" style="text-align: center; color: yellow"> Preencha todos os campos corretamente</p>
+
+    <form action="" method="POST" style="text-align: center;">
+
+        {% csrf_token %}
+
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-success">Pagar</button>
+
+    </form>
+
+    <th scope="col">
+        <h3 style="text-align: center;"> 
+            <p class="lead" style="color: red;">$297,00 </p>
+            <p  class="lead" style="color: greenyellow;">$50,00 </p>
+        </h3>
+    </th>
+
+  
+
+{% endblock %}
+
+{% block roda %}
+
+{% endblock %}
+

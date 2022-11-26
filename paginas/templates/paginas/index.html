@@ -1,0 +1,46 @@
+{% extends 'paginas/modelo.html' %}
+{% load static %}
+
+{% block titulo %}
+<title>Cursos Online</title>
+{% endblock %}
+
+{% block destaque %}
+{% endblock %}
+{% block conteudo %}
+
+<table border="0">
+    <tr border="0">
+        <td>
+      
+        </td>
+    </tr>
+</table>
+
+<h3 style="text-align: center;"> <img style="text-align:center ;" class="center" src="{% static 'img/pacote.PNG' %}"
+        width="15%" height="150" alt=""></h3>
+
+
+
+
+<h6 style="text-align: center ;">
+   
+          
+                <a  class="lead" style="color: yellow; " class="nav-link" href="{% url 'pagamento' %}">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                   Clique AQUI Obter Pacote Full Stack Master Completo
+                </a>
+</h6>
+
+<p><h6  class="lead" style="text-align: center; color: red;"> $ 297,00</h6> </p>
+<h6  class="lead" style="text-align: center; color: greenyellow;"> $50</h6>
+</p>
+<h6  class="lead" style="text-align: center; color: black;"> Você vai aprender Mais de 2500 Projetos</h6>
+
+
+<img class="center" style="text-align: center;" src="{% static 'img/linguagens.jpg' %}" width="100%" height="500"alt="">
+<img class="center" style="text-align: center;" src="{% static 'img/linguagens2.jpg' %}" width="100%" height="500"alt="">
+
+{% endblock %}
+{% block roda %}
+{% endblock %}
